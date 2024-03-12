@@ -13,9 +13,11 @@
         <input id="input-time" type="time" required>
         <button id="add-button" style="margin-left: 50px;" id="enter-toDo" onclick=" addTo_toDoList();">Add</button> <br><br>
        </div>
-       
+      
 
         <div id="toDoList-container"></div>
+        <button id="refresh-button" onclick="localStorage.clear();
+                display_toDoList();" >Refresh</button>
         <script src="/JAVA_SCRIPT/toDo.js"></script>
     </main>
 </body>
