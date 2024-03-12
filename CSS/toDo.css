@@ -6,3 +6,12 @@ body{
 #main-heading{
     font-weight: 100;
 }
+
+#toDoList-container{
+    margin-left: 150px;
+    text-align: center;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 200px 100px 100px 100px;
+   row-gap: 20px;
+}
