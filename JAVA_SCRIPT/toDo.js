@@ -1,5 +1,5 @@
 //Array to Keep List of To Do Tasks
-toDoList = [];
+toDoList = ['natasha', 'jash'];
 display_toDoList();
 function addTo_toDoList(){
     //from document we are selecting the value inside text input box having ID 'input-box'
@@ -12,9 +12,20 @@ function addTo_toDoList(){
 }
 
 function display_toDoList(){
-    let displayItems = document.querySelector('#show-toDoList')
-    displayItems.innerText = '';
+    let displayItems = document.querySelector('#toDoList-container')
+    let newHTML = ''; //the entire new html will be refreshed
      for(let i=0; i<toDoList.length; i++){
-       displayItems.innerText += toDoList[i]+ '\n'; 
+        //newHTML element is being modified everytime enirely and due to for loop all elements are added again
+        newHTML+= 
+        `<div>
+             <span style="margin-right: 100px;">${toDoList[i]}</span>  
+             <button id="delete-button" onclick = "
+             toDoList.splice (${i},1);
+             display_toDoList();"
+             >Delete</button> 
+             <br>
+        </div>`; 
      }
+     //the div is being updated with newHTML on every Addition
+     displayItems.innerHTML = newHTML;
 }
