@@ -15,6 +15,8 @@ toDoList = [
 ];
 display_toDoList();
 function addTo_toDoList(){
+
+    
     //from document we are selecting the value inside text input box having ID 'input-box'
     let itemElement = document.querySelector('#input-box');
     let dateElement = document.querySelector('#input-date');
@@ -23,7 +25,7 @@ function addTo_toDoList(){
     let toDoItem = itemElement.value;
     let toDoDate = dateElement.value;
     let toDoTime = timeElement.value;
-
+    
     //on every click adding it to the Array of to Do List
     toDoList.push({ item:toDoItem, 
                     date:toDoDate, 

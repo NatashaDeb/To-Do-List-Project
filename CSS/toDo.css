@@ -15,3 +15,29 @@ body{
     grid-template-columns: 200px 100px 100px 100px;
    row-gap: 20px;
 }
+
+#input-box, #input-date, #input-time{
+    padding: 10px 5px;
+    font-size: 15px;
+
+}
+
+#add-button{
+    background-color: rgb(43, 154, 43);
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    font-weight: 100;
+    cursor: pointer;
+
+}
+
+#delete-button{
+    background-color: rgb(184, 14, 14);
+    border-radius: 10px;
+    color: aliceblue;
+    height: 30px;
+    width:80px;
+    cursor: pointer;
+    
+}
